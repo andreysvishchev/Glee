@@ -1,0 +1,22 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-size: 16px;
+  line-height: 26px;
+  @extend %Rubik-400;
+  color: $default;
+}
+
+.container {
+  max-width: 1190px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+a{
+  @extend %Rubik-400;
+  color: $default;
+}
