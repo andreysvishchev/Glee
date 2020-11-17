@@ -4,7 +4,7 @@
 @import 'global';
 
 .header {
-  padding: 50px 0;
+  padding: 40px 0;
   &__inner {
     max-width: 1790px;
     padding: 0 10px;
@@ -20,7 +20,10 @@
     display: flex;
   }
   &__list-item + .menu__list-item {
-    margin-left: 30px;
+    margin-left: 35px;
+  }
+  &__list-item:first-child {
+    margin-left: 150px;
   }
   &__list-link {
     font-size: 15px;
@@ -46,7 +49,7 @@
   }
   &__purchases {
     display: flex;
-    height: 50px;
+    height: 52px;
     border-radius: 25px;
     background-color: $bg;
     padding: 9px 0;
@@ -61,15 +64,15 @@
   }
   &__link-heart {
     border-right: 1px solid #fde7d3;
-    padding: 0 30px 3px 35px;
+    padding: 0 35px 3px 35px;
   }
   &__link-cart {
-    padding: 0 31px 3px 25px;
+    padding: 0 40px 3px 25px;
   }
   &__num {
     position: absolute;
     top: 5px;
-    right: 20px;
+    right: 27px;
     width: 16px;
     height: 16px;
     text-align: center;
@@ -96,7 +99,7 @@
 .footer-top {
   display: flex;
   margin-top: 80px;
-  padding-bottom: 75px;
+  padding-bottom: 75gulppx;
   border-bottom: 1px solid #dae4e9;
   justify-content: space-between;
   &__logo {
@@ -109,26 +112,35 @@
     @extend %DMSans-700;
     color: #1f2044;
     margin: 16px 0 21px;
+    text-transform: uppercase;
   }
   &__contact {
     max-width: 200px;
   }
   &__list-item {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
+  }
+  &__list-link {
+    line-height: 24px;
   }
   &__item-form {
     max-width: 275px;
     width: 100%;
+    margin-left: 70px;
+  }
+  &__nav {
+   margin-right: 75px;
+   margin-left: 35px;
   }
   &__text{
     max-width: 250px;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
   }
   &__input,
   &__btn {
     border: none;
     @extend %DMSans-400;
-    padding: 10px 15px;
+    padding: 6px 15px;
   }
   &__input {
     background-color: #fef7f0;
