@@ -1,6 +1,7 @@
 $default: #8b8b8b;
 $accent: #191919;
 $bg: #fcd7b6; 
+$bg-light: #fef7f0;
 
 %DMSans-400 {
   font-family: 'DMSans-Regular', sans-serif;
@@ -25,4 +26,9 @@ $bg: #fcd7b6;
 %Rubik-500 {
   font-family: 'Rubik-Medium', sans-serif;
   font-weight: 500;
+}
+
+%btn {
+  background-color: #a3bbc8;
+  color: #fff;
 }
