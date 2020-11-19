@@ -192,6 +192,7 @@
   &__content {
     min-height: 370px;
     padding-top: 20px;
+    padding-left: 2px;
   }
   &__title {
     margin-top: 10px;
@@ -298,9 +299,119 @@
     @extend %DMSans-400;
     font-size: 16px;
   }  
-
 }
 
+.products {
+  margin-bottom: 95px;
+  &__title,
+  &__filter-btn { 
+    text-align: center;
+  }
+  &__title {
+     margin: 70px 0 30px;
+  }
+  &__content {
+    display: grid;
+    min-height: 800px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 40px 30px;
+  }
+  &__content-item {
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    display: flex;
+    min-width: 270px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px 0 35px;
+    max-height: 380px;
+  }
+   &__content-title {
+     color: #243f4d;
+     @extend %DMSans-500;
+     font-size: 16px;
+     line-height: 40px;
+   }
+   &__content-price {
+     color: #a3bbc8;
+     font-size: 16px;
+     @extend %DMSans-700;
+   }
+   &__bottom {
+     margin-top: 185px;
+   }
+   &__bottom-items {
+     display: flex;
+     justify-content: space-between;
+   }
+   &__bottom-item {
+     min-height: 390px;
+     background-color: #feefe2;
+     width: 100%;
+     margin-right: 30px;
+     position: relative;
+     display: flex;
+     justify-content: inherit;
+     align-items: center;
+     &:last-child {
+       margin-right: 0;
+     }
+   }
+   &__image {
+     position: absolute;
+     bottom: 83px;
+     left: 145px;
+   }
+   &__bottom-descr--right,
+   &__bottom-descr--left {
+     color: #243f4d;
+    }
+   &__bottom-descr--right{
+     max-width: 450px;
+     margin-right: 28px;
+   }
+   &__bottom-descr--left {
+     max-width: 346px;
+     margin-right: 93px;
+   }
+   &__bottom-title {
+     @extend %DMSans-700;
+     font-size: 26px;
+     line-height: 32px;
+     margin-bottom: 15px;
+   } 
+   &__bottom-text {
+     @extend %Rubik-400;
+     font-size: 16px;
+     line-height: 30px;
+     margin-bottom: 20px;
+   }
+   &__bottom-link {
+     display: inline-block;
+     padding: 18px 81px 18px 29px;
+     border: 1px solid #b3b7b5;
+     border-radius: 5px;
+     position: relative;
+     &::after {
+       content: url('../images/icons/arrow-black.svg');
+       position: absolute;
+       right: 24px;
+     }
+     
+
+   }
+
+   
+
+   
+
+
+
+  
+}
 
 
 
