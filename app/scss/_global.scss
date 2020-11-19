@@ -12,6 +12,11 @@ body {
   flex-direction: column;
 }
 
+a{
+  @extend %Rubik-400;
+  color: $default;
+}
+
 .main {
   flex-grow: 1;
 }
@@ -28,7 +33,28 @@ body {
   margin: 0 auto;
 }
 
-a{
-  @extend %Rubik-400;
-  color: $default;
+.title {
+  @extend %DMSans-700;
+  font-size: 36px;
+  color: $accent;
 }
+
+.products__btn {
+  border: none;
+  background-color: transparent;
+  color: $default;
+  font-size: 16px;
+  margin-bottom: 75px;
+  @extend %DMSans-700;
+  margin-left: 20px;
+}
+
+.products__btn:focus {
+  outline: transparent;
+  border: 2px solid $accent;
+}
+
+.mixitup-control-active {
+  color: $accent;
+}
+
