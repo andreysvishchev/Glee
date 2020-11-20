@@ -17,13 +17,13 @@
   &__list {
     display: flex;
   }
-  &__list-item + .menu__list-item {
+  &__item + .menu__item {
     margin-left: 35px;
   }
-  &__list-item:first-child {
+  &__item:first-child {
     margin-left: 150px;
   }
-  &__list-link {
+  &__link {
     font-size: 15px;
     line-height: 12px;
     color: #436372;
@@ -38,7 +38,7 @@
     align-items: center;
     justify-content: center;
   }
-  &__link-search {
+  &--search {
     width: 50px;
     height: 50px;
     background-color: #edf1f4;
@@ -47,29 +47,37 @@
   }
   &__purchases {
     display: flex;
-    height: 52px;
     border-radius: 25px;
     background-color: $bg;
-    padding: 9px 0;
-    align-items: center;
+    justify-content: space-around;
   }
-  &__link-heart,
-  &__link-cart {
+  &--heart,
+  &--cart {
     position: relative;
     display: flex;
     align-items: flex-end;
     height: 32px;
   }
-  &__link-heart {
-    border-right: 1px solid #fde7d3;
-    padding: 0 35px 3px 35px;
+  &--heart {
+    padding: 35px 35px 15px 35px;
   }
-  &__link-cart {
-    padding: 0 40px 3px 25px;
+  &--cart {
+    padding: 35px 40px 12px 25px;
+    position: relative;
+    &::before {
+      content: '';
+      background-color: rgb(255, 255, 255);
+      opacity: 0.4;
+      width: 1px;
+      height: 32px;
+      position: absolute;
+      top: 8px;
+      left: 0;
+    }
   }
   &__num {
     position: absolute;
-    top: 5px;
+    top: 11px;
     right: 27px;
     width: 16px;
     height: 16px;
@@ -81,7 +89,7 @@
     border-radius: 50%;
     background-color: #fff;
   }
-  &__link-menu {
+  &--menu {
     width: 50px;
     height: 50px;
     background-color: #436372;
@@ -94,10 +102,14 @@
   font-size: 14px;
 }
 
+.address {
+  font-style: normal;
+}
+
 .footer-top {
   display: flex;
   margin-top: 80px;
-  padding-bottom: 75px;
+  padding-bottom: 50px;
   border-bottom: 1px solid #dae4e9;
   justify-content: space-between;
   &__logo {
@@ -112,7 +124,7 @@
     margin: 16px 0 21px;
     text-transform: uppercase;
   }
-  &__contact {
+  &--contact {
     max-width: 200px;
   }
   &__list-item {
@@ -121,14 +133,14 @@
   &__list-link {
     line-height: 24px;
   }
-  &__item-form {
+  &--form {
     max-width: 275px;
     width: 100%;
     margin-left: 70px;
   }
-  &__nav {
-   margin-right: 75px;
-   margin-left: 35px;
+  &--nav {
+    margin-right: 75px;
+    margin-left: 35px;
   }
   &__text{
     max-width: 250px;
@@ -155,7 +167,7 @@
 }
 
 .footer-bottom {
-  margin: 20px 0 40px;
+  margin: 30px 0;
   display: flex;
   justify-content: space-between;
   &__list {
@@ -195,6 +207,7 @@
     padding-left: 2px;
   }
   &__title {
+    text-transform: uppercase;
     margin-top: 10px;
     color: #243f4d;
     font-size: 72px;
@@ -400,17 +413,7 @@
        position: absolute;
        right: 24px;
      }
-     
-
    }
-
-   
-
-   
-
-
-
-  
 }
 
 
