@@ -32,3 +32,10 @@ $bg-light: #fef7f0;
   background-color: #a3bbc8;
   color: #fff;
 }
+
+@function max($numbers...) {
+@return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+@return m#{i}n(#{$numbers});
+}
