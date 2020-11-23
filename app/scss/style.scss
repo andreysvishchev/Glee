@@ -420,7 +420,7 @@
 
   &__image {
     position: absolute;
-    transform: translateX(20%);
+    transform: translateX(60%);
     bottom: 83px;
   }
 
@@ -538,7 +538,7 @@
 }
 
 .design {
-  // margin-bottom: 120px;
+  margin-top: 35px;
   &__items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -568,13 +568,94 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 120px;
   }
 
   &__video-play::before {
     content: url('../images/icons/play-btn.svg');
   }
+}
 
+.insights {
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  
+  }
+  &__title {
+    text-align: left;
+  }
+  &__link {
+    font-size: 16px;
+    @extend %DMSans-700;
+    color: #262626;
+    padding-right: 25px;
+    position: relative;
+    &::after {
+      content: url('../images/icons/insights-arrow.svg');
+      position: absolute;
+      right: 0;
+    }
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    max-width: 370px;
+    position: relative;
+    background-color: #fff !important;
+  }
+  &__news {
+    position: absolute;
+    background-color: #a3bbc8;
+    line-height: 20px;
+    @extend %DMSans-700;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 7px 30px;
+    transform: translateY(-50%);
+    
+    left: 27px;
+    border-radius: 18px;
+  }
+  &__text {
+    margin: 0 auto;
+    color: #262626;
+    font-size: 18px;
+    line-height: 22px;
+    @extend %DMSans-500;
+    padding: 33px 3px 10px;
+    max-width: 315px;
+    min-height: 115px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  &__post-info {
+    display: flex;
+    padding: 10px 33px 25px;
+    font-size: 12px;
+    color: #222933;
+    @extend %Rubik-400;
+    span {
+      font-family: MyriadPro-Regular;
+      padding-right: 5px;
+    }
+  }
+  &__info-data {
+    padding-right: 30px;
+  }
+}
 
+.partners {
+  background-color: $bg-light;
+  padding: 260px 0px 90px;
+  margin: -176px 0 1px;
+  &__items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
 
 
