@@ -1,7 +1,7 @@
 $(function () {
 
   var mixer = mixitup('.product__items');
-  var mixer = mixitup('.design__items');
+  var mixer = mixitup('.new-design__items');
 
   $('.slider-top__items').slick({
     dots: true,

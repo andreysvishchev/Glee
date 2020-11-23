@@ -44,7 +44,7 @@
     justify-content: center;
   }
 
-  &--search {
+  &__link--search {
     width: 50px;
     height: 50px;
     background-color: #edf1f4;
@@ -59,19 +59,19 @@
     justify-content: space-around;
   }
 
-  &--heart,
-  &--cart {
+  &__link--heart,
+  &__link--cart {
     position: relative;
     display: flex;
     align-items: flex-end;
     height: 32px;
   }
 
-  &--heart {
+  &__link--heart {
     padding: 35px 35px 15px 35px;
   }
 
-  &--cart {
+  &__link--cart {
     padding: 35px 40px 12px 25px;
     position: relative;
 
@@ -102,7 +102,7 @@
     background-color: #fff;
   }
 
-  &--menu {
+  &__link--menu {
     width: 50px;
     height: 50px;
     background-color: #436372;
@@ -389,11 +389,6 @@
     margin-left: 20px;
   }
 
-  &__btn:focus {
-    outline: transparent;
-    border: 2px solid $accent;
-  }
-
   &__bottom {
     margin-top: 185px;
   }
@@ -459,6 +454,9 @@
     border: 1px solid #b3b7b5;
     border-radius: 5px;
     position: relative;
+    @extend %Rubik-500;
+    color: #436372;
+    font-size: 15px;
 
     &::after {
       content: url('../images/icons/arrow-black.svg');
@@ -481,13 +479,20 @@
   box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
   max-width: 270px;
   height: 380px;
-  padding: 30px 0 37px 0;
+  padding: 20px 0 28px 0;
   text-align: center;
   overflow: hidden;
   position: relative;
 
   &:hover .product-item__link-box {
     transform: translateY(0);
+  }
+
+  &__img-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 240px;
   }
 
   &__link-box {
@@ -537,7 +542,7 @@
   }
 }
 
-.design {
+.new-design {
   margin-top: 35px;
   &__items {
     display: grid;
@@ -560,6 +565,11 @@
     font-size: 20px;
     color: $accent;
   }
+
+  &__descr-text {
+    color: #a3bbc8;
+    font-size: 16px;
+  }
   
   &__video {
     height: 500px;
@@ -581,11 +591,12 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
-  
   }
+
   &__title {
     text-align: left;
   }
+
   &__link {
     font-size: 16px;
     @extend %DMSans-700;
@@ -598,15 +609,18 @@
       right: 0;
     }
   }
+
   &__items {
     display: flex;
     justify-content: space-between;
   }
+
   &__item {
     max-width: 370px;
     position: relative;
     background-color: #fff !important;
   }
+
   &__news {
     position: absolute;
     background-color: #a3bbc8;
@@ -616,10 +630,10 @@
     color: #fff;
     padding: 7px 30px;
     transform: translateY(-50%);
-    
     left: 27px;
     border-radius: 18px;
   }
+
   &__text {
     margin: 0 auto;
     color: #262626;
@@ -631,6 +645,7 @@
     min-height: 115px;
     border-bottom: 1px solid #e0e0e0;
   }
+
   &__post-info {
     display: flex;
     padding: 10px 33px 25px;
@@ -642,6 +657,7 @@
       padding-right: 5px;
     }
   }
+
   &__info-data {
     padding-right: 30px;
   }
@@ -651,6 +667,7 @@
   background-color: $bg-light;
   padding: 260px 0px 90px;
   margin: -176px 0 1px;
+
   &__items {
     display: flex;
     justify-content: space-around;
