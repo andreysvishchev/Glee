@@ -1,0 +1,11 @@
+.partners {
+    background-color: $bg-light;
+    padding: 260px 0px 90px;
+    margin: -176px 0 1px;
+
+    &__items {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}

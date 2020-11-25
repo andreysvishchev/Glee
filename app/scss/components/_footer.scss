@@ -1,0 +1,100 @@
+.address {
+    font-style: normal;
+}
+
+.footer {
+    font-size: 14px;
+
+    &__top {
+        display: flex;
+        margin-top: 80px;
+        padding-bottom: 50px;
+        border-bottom: 1px solid #dae4e9;
+        justify-content: space-between;
+    }
+
+    &__top-logo {
+        margin-bottom: 20px;
+        display: block;
+    }
+
+    &__top-title {
+        font-size: 16px;
+        line-height: 21px;
+        @extend %DMSans-700;
+        color: #1f2044;
+        margin: 16px 0 21px;
+        text-transform: uppercase;
+    }
+
+    &__top-contacts {
+        max-width: 200px;
+    }
+
+    &__top-item {
+        margin-bottom: 8px;
+    }
+
+    &__top-link {
+        line-height: 24px;
+    }
+
+    &__top-newsletter {
+        max-width: 275px;
+        width: 100%;
+        margin-left: 70px;
+    }
+
+    &__top-nav {
+        margin-right: 75px;
+        margin-left: 35px;
+    }
+
+    &__top-text {
+        max-width: 250px;
+        margin-bottom: 25px;
+    }
+
+    &__top-input,
+    &__top-btn {
+        border: none;
+        @extend %DMSans-400;
+        padding: 6px 17px;
+    }
+
+    &__top-input {
+        background-color: $bg-light;
+        max-width: 170px;
+
+        &::placeholder {
+            color: #234969;
+            font-size: 12px;
+        }
+    }
+
+    &__top-btn {
+        background-color: #a3bbc8;
+        color: #fff;
+        margin-left: -4px;
+    }
+
+    &__bottom {
+        margin: 30px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__bottom-list {
+        display: flex;
+    }
+
+    &__bottom-item {
+        padding: 0 12px;
+        border-right: 1px solid $default;
+    }
+
+    &__bottom-item:last-child {
+        border: none;
+        padding-right: 25px;
+    }
+}
