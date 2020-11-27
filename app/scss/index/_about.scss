@@ -13,6 +13,7 @@
 
 .about-top {
   margin-bottom: 120px;
+
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -134,19 +135,22 @@
 
 .about-center {
   padding: 87px 0 77px;
-  margin-bottom: 120px;
+  margin-bottom: 127px;
   background-color: $bg;
+
   &__items {
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
     color: #243f4d;
   }
+
   &__item {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   &__image {
     margin-bottom: 20px;
   }
@@ -155,7 +159,67 @@
     font-size: 36px;
     margin-bottom: 20px;
   }
+
   &__text {
     font-size: 18px;
   }
+}
+
+.about-bottom {
+  margin-bottom: 120px;
+
+  &__inner {
+    display: flex;
+  }
+
+  &__info {
+    max-width: 300px;
+    margin-right: 100px;
+  }
+
+  &__title {
+    margin-bottom: 35px;
+  }
+
+  &__info-link {}
+
+  &__team-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px 30px;
+  }
+
+  &__team-item {}
+
+  &__team-worker {
+    max-width: 325px;
+    height: 110px;
+    background-color: #fff;
+    margin-top: -53px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+
+  }
+
+  &__name-box {
+    margin-right: 50px;
+  }
+
+  &__team-text {}
+
+  &__team-inst,
+  &__team-google {
+    width: 40px;
+    height: 40px;
+    background-color: #f6f6f6;
+    border-radius: 50%;
+    margin-right: 7px;
+
+  }
+
+  &__link-box {}
 }
