@@ -1,0 +1,161 @@
+.about {
+  &__title {
+    color: #243f4d;
+    @extend %DMSans-700;
+    font-size: 36px;
+  }
+
+  &__text {
+    color: #243f4d;
+    line-height: 28px;
+  }
+}
+
+.about-top {
+  margin-bottom: 120px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+  }
+
+  &__num-box {
+    margin-top: 125px;
+    display: flex;
+  }
+
+  &__num {
+    display: block;
+    font-size: 140px;
+    color: #a3bbc8;
+    @extend %Rubik-700;
+    padding-right: 25px;
+  }
+
+  &__list-box {
+    margin-top: -23px;
+  }
+
+  &__list {
+    @extend %Rubik-400;
+    font-size: 16px;
+    color: #243f4d;
+    line-height: 30px;
+  }
+
+  &__title {
+    padding: 50px 0 45px;
+  }
+
+  &__text {
+    padding-bottom: 63px;
+  }
+
+  &__items {
+    display: flex;
+    padding-top: 25px;
+    border-top: 1px solid #e6eaf0;
+    justify-content: space-between;
+    max-width: 530px;
+  }
+
+  &__item {
+    @extend %DMSans-700;
+    position: relative;
+    padding-right: 20px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &:first-child {
+      margin-left: 57px;
+    }
+
+    &:last-child {
+      padding-right: 27px;
+    }
+  }
+
+  &__item--projects,
+  &__item--revenue,
+  &__item--awards {
+    border-right: 1px solid #e6eaf0;
+
+    &:last-child {
+      border: none;
+    }
+  }
+
+  &__item::before {
+    position: absolute;
+    content: '';
+  }
+
+  &__item--projects::before {
+    background-image: url('../images/icons/about-icon1.svg');
+    width: 36px;
+    height: 37px;
+    left: -58px;
+    top: 19px;
+  }
+
+  &__item--revenue::before {
+    background-image: url('../images/icons/about-icon2.svg');
+    width: 43px;
+    height: 39px;
+    left: -66px;
+    top: 18px;
+  }
+
+  &__item--awards::before {
+    background-image: url('../images/icons/about-icon3.svg');
+    width: 41px;
+    height: 40px;
+    left: -61px;
+  }
+
+  &__item-title {
+    font-size: 36px;
+    color: #243f4d;
+  }
+
+  &__item-text {
+    font-size: 16px;
+    color: #4c4c4c;
+  }
+}
+
+.about-center {
+  padding: 87px 0 77px;
+  margin-bottom: 120px;
+  background-color: $bg;
+  &__items {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    color: #243f4d;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__image {
+    margin-bottom: 20px;
+  }
+
+  &__num {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  &__text {
+    font-size: 18px;
+  }
+}

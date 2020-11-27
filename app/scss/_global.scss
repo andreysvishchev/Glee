@@ -12,7 +12,7 @@ body {
   flex-direction: column;
 }
 
-a{
+a {
   @extend %Rubik-400;
   color: $default;
 }
@@ -22,9 +22,9 @@ a{
 }
 
 .container--big {
-    max-width: 1790px;
-    padding: 0 10px;
-    margin: 0 auto;
+  max-width: 1790px;
+  padding: 0 10px;
+  margin: 0 auto;
 }
 
 .container {
@@ -40,5 +40,44 @@ a{
   text-align: center;
 }
 
+.top {
+  padding: 34px 0 29px;
+  background-color: #edf1f4;
+  text-align: center;
+  margin-bottom: 115px;
 
+  &__title {
+    color: #222933;
+    @extend %Rubik-300;
+    font-size: 36px;
+  }
+}
 
+.breadcrumbs {
+  display: inline-flex;
+  justify-content: center;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    padding-top: 10px;
+    @extend %Rubik-400;
+    font-size: 14px;
+
+    &::after {
+      content: '/';
+    }
+    &:last-child {
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &__link {
+    color: #888c91;
+
+  }
+}
