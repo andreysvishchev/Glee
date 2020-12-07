@@ -28,7 +28,7 @@
   &__title {
     text-transform: uppercase;
     margin-top: 10px;
-    color: #243f4d;
+    color: $text;
     font-size: 72px;
     line-height: 72px;
     @extend %Rubik-500;
@@ -42,15 +42,7 @@
     margin-bottom: 54px;
     font-size: 18px;
     line-height: 30px;
-  }
-
-  &__link {
-    @extend %btn;
-    padding: 23px 100px 20px 30px;
-
-    &::after {
-      right: 19px;
-    }
+    color: #436372;
   }
 
   &__img-inner {

@@ -1,5 +1,11 @@
 $(function () {
 
+  $('.related__items').slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 4
+  });
+
   $('.product-tabs__top-item').on('click', function (e) {
     e.preventDefault();
     $('.product-tabs__top-item').removeClass('product-tabs__top-item--active');
@@ -78,5 +84,6 @@ $(function () {
     autoplay: true,
     autoplaySpeed: 2000
   });
+
 
 })

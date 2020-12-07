@@ -8,6 +8,10 @@
     margin-bottom: 120px;
   }
 
+  &__item {
+    position: relative;
+  }
+
   &__descr {
     background-size: cover;
     background-repeat: no-repeat;
@@ -15,6 +19,8 @@
     height: 245px;
     padding: 40px 35px 0;
     @extend %DMSans-700;
+    position: absolute;
+    top: 0;
   }
 
   &__descr-title {

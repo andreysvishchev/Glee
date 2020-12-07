@@ -1,17 +1,5 @@
 .about {
-  &__title {
-    color: #243f4d;
-    @extend %DMSans-700;
-    font-size: 36px;
-  }
-
-  &__text {
-    color: #243f4d;
-    line-height: 30px;
-  }
-}
-
-.about-top {
+  color: $text;
   margin-bottom: 120px;
 
   &__inner {
@@ -133,8 +121,9 @@
   }
 }
 
-.about-center {
-  padding: 87px 0 77px;
+.advantages {
+  margin-top: 120px;
+  padding: 200px 0 77px;
   margin-bottom: 127px;
   background-color: $bg;
 
@@ -149,10 +138,38 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -65px;
+      transform: translateY(-50%);
+    }
   }
 
-  &__image {
-    margin-bottom: 20px;
+  &__item--rate::before {
+    background-image: url('../../images/icons/about-center1.svg');
+    height: 57px;
+    width: 64px;
+  }
+
+  &__item--delivered::before {
+    background-image: url('../../images/icons/about-center2.svg');
+    width: 64px;
+    height: 64px;
+  }
+
+  &__item--time::before {
+    background-image: url('../../images/icons/about-center3.svg');
+    width: 67px;
+    height: 64px;
+  }
+
+  &__item--store::before {
+    background-image: url('../../images/icons/about-center4.svg');
+    width: 48px;
+    height: 64px;
   }
 
   &__num {
@@ -165,9 +182,7 @@
   }
 }
 
-.about-bottom {
-  margin-bottom: 120px;
-
+.team {
   &__inner {
     display: flex;
   }
@@ -194,13 +209,13 @@
     border-radius: 5px;
   }
 
-  &__team-items {
+  &__items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 40px 30px;
   }
 
-  &__team-worker {
+  &__worker {
     max-width: 325px;
     height: 110px;
     background-color: #fff;
@@ -218,50 +233,43 @@
     margin-right: 50px;
   }
 
-  &__team-name {
+  &__name {
     @extend %DMSans-700;
     font-size: 22px;
     line-height: 26px;
     color: #436372;
   }
 
-  &__team-text {
+  &__post {
     color: #61637b;
   }
 
-  &__team-inst,
-  &__team-google {
+  &__social-link {
     width: 40px;
     height: 40px;
     background-color: #f6f6f6;
     border-radius: 50%;
     margin-right: 7px;
-  }
-
-  &__team-inst,
-  &__team-google {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    &::before {
+      position: absolute;
+      content: '';
+    }
   }
 
-  &__team-inst::before,
-  &__team-google::before {
-    position: absolute;
-    content: '';
-  }
-
-  &__team-inst::before {
+  &__social-link--inst::before {
     background-image: url('../../images/icons/inst.svg');
     width: 17px;
     height: 17px;
   }
 
-  &__team-google::before {
+  &__social-link--gogle::before {
     background-image: url('../../images/icons/google.svg');
     width: 23px;
     height: 15px;
   }
-
 }

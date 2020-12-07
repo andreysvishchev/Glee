@@ -1,8 +1,9 @@
 @import 'vars';
+@import 'global';
 @import 'fonts';
 @import 'reset';
 @import 'libs';
-@import 'global';
+
 
 @import 'components/header';
 @import 'index/slider-top';
@@ -17,3 +18,4 @@
 @import 'media';
 @import 'index/product-list';
 @import 'index/product-details';
+@import 'index/blog';

@@ -1,5 +1,5 @@
 .product-one {
-  color: #243f4d;
+  color: $text;
 
   &__inner {
     display: flex;
@@ -51,6 +51,7 @@
     padding: 15px 57px;
     border-radius: 5px;
     margin-left: 15px;
+    cursor: pointer;
   }
 
   &__info-item {
@@ -201,7 +202,7 @@
     font-size: 18px;
     @extend %Rubik-500;
     border-radius: 5px;
-    color: #243f4d;
+    color: $text;
     padding: 15px 70px;
   }
 
@@ -235,8 +236,9 @@
 
   &__title {
     font-size: 36px;
-    color: #243f4d;
+    color: $text;
     @extend %DMSans-700;
+    margin-bottom: 80px;
   }
 
   &__btn {
@@ -246,16 +248,58 @@
     background-color: #fff;
     border: 2px solid #edf1f4;
     border-radius: 5px;
+
     &:hover {
       border-color: #a3bbc8;
     }
+
     &:last-child {
       margin-right: 0;
     }
   }
 
-  &__items {
-    display: flex;
-    justify-content: space-between;
+}
+
+.slick-arrow {
+  position: absolute;
+  height: 48px;
+  width: 48px;
+  background-color: #fff;
+  border: 2px solid #edf1f4;
+  border-radius: 5px;
+  font-size: 0;
+  top: -118px;
+
+  &:hover {
+    border-color: #a3bbc8;
   }
 }
+
+.slick-prev {
+  right: 0;
+
+  &::before {
+    position: absolute;
+    content: '';
+    background-image: url('../images/icons/slider-arrow-r.svg');
+    width: 22px;
+    height: 9px;
+    top: 17px;
+    right: 10px;
+  }
+}
+
+.slick-next {
+  right: 72px;
+
+  &::before {
+    position: absolute;
+    content: '';
+    background-image: url('../images/icons/slider-arrow-l.svg');
+    width: 22px;
+    height: 9px;
+    top: 17px;
+    right: 10px;
+  }
+}
+

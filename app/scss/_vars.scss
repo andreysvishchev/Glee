@@ -2,6 +2,7 @@ $default: #8b8b8b;
 $accent: #191919;
 $bg: #fcd7b6;
 $bg-light: #fef7f0;
+$text: #243f4d;
 
 %DMSans-400 {
   font-family: 'DMSans', sans-serif;
@@ -36,18 +37,6 @@ $bg-light: #fef7f0;
 %Rubik-700 {
   font-family: 'Rubik', sans-serif;
   font-weight: 700;
-}
-
-%btn {
-  background-color: #a3bbc8;
-  color: #fff;
-  font-size: 15px;
-  position: relative;
-
-  &::after {
-    content: url('../images/icons/arrow.svg');
-    position: absolute;
-  }
 }
 
 %checkbox-hidden {
