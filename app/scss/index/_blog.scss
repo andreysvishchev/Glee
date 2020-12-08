@@ -44,6 +44,7 @@
   &__info-data,
   &__info-author {
     position: relative;
+    color: #fff;
 
     &::before {
       position: absolute;
@@ -69,6 +70,7 @@
     color: #333333;
     font-size: 36px;
     @extend %Rubik-400;
+    display: block;
   }
 
   &__text {
