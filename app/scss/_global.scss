@@ -21,8 +21,7 @@ a {
   flex-grow: 1;
 }
 
-.container,
-.container--big {
+.container {
   max-width: 1190px;
   padding: 0 10px;
   margin: 0 auto;
@@ -35,6 +34,11 @@ a {
 .title {
   @extend %DMSans-700;
   font-size: 36px;
+}
+
+.icon {
+  @extend %icon;
+  padding-right: 5px;
 }
 
 .address {

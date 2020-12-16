@@ -63,81 +63,78 @@
   }
 }
 
-.jq-number__field {
-  width: 148px;
-
-  border: 1px solid #a3bbc8;
-  transform: translateY(1px);
-}
-
-.jq-number__field input {
-  height: 54px;
-  width: 100%;
-  border: none;
-  outline: none;
-  text-align: center;
-  color: #333333;
-
-}
-
 .jq-number {
   padding: 0;
   position: relative;
-}
 
-.jq-number__spin {
-  position: absolute;
-  cursor: pointer;
-  width: 12px;
-  height: 12px;
-  top: 50%;
-  transform: translateY(-50%);
-}
+  &__spin {
+    position: absolute;
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 
-.jq-number__spin.minus {
-  left: 15px;
-  padding-right: 36px;
-  border-right: 1px solid #a3bbc8;
-  height: 54px;
-}
+  &__field {
+    width: 148px;
+    border: 1px solid #a3bbc8;
+    transform: translateY(1px);
 
-.jq-number__spin.plus {
-  right: 15px;
-  padding-left: 34px;
-  border-left: 1px solid #a3bbc8;
-  height: 54px;
-}
+    input {
+      height: 54px;
+      width: 100%;
+      border: none;
+      outline: none;
+      text-align: center;
+      color: #333333;
+    }
+  }
 
-.jq-number__spin.minus::after {
-  content: '';
-  position: absolute;
-  top: 26px;
-  left: 4px;
-  width: 10px;
-  height: 1px;
-  background-color: #333333;
-}
+  &__spin.minus {
+    left: 15px;
+    padding-right: 36px;
+    border-right: 1px solid #a3bbc8;
+    height: 54px;
+  }
 
-.jq-number__spin.plus::before {
-  content: '';
-  position: absolute;
-  top: 23px;
-  left: 23px;
-  width: 1px;
-  height: 10px;
-  background-color: #333333;
-}
+  &__spin.plus {
+    right: 15px;
+    padding-left: 34px;
+    border-left: 1px solid #a3bbc8;
+    height: 54px;
+  }
 
-.jq-number__spin.plus::after {
-  content: '';
-  position: absolute;
-  top: 27px;
-  left: 18px;
-  width: 10px;
-  height: 1px;
-  background-color: #333333;
-}
+  &__spin.minus::after {
+    content: '';
+    position: absolute;
+    top: 26px;
+    left: 4px;
+    width: 10px;
+    height: 1px;
+    background-color: #333333;
+  }
 
+  &__spin.plus::before {
+    content: '';
+    position: absolute;
+    top: 23px;
+    left: 22px;
+    width: 1px;
+    height: 10px;
+    background-color: #333333;
+  }
+
+  &__spin.plus::after {
+    content: '';
+    position: absolute;
+    top: 27px;
+    left: 18px;
+    width: 10px;
+    height: 1px;
+    background-color: #333333;
+  }
+}
 
 .jq-ry-container>.jq-ry-group-wrapper>.jq-ry-group>svg {
   margin-right: 10px;
@@ -302,4 +299,3 @@
     right: 10px;
   }
 }
-

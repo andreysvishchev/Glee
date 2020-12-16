@@ -70,44 +70,44 @@
     &:last-child {
       padding-right: 27px;
     }
-  }
 
-  &__item--projects,
-  &__item--revenue,
-  &__item--awards {
-    border-right: 1px solid #e6eaf0;
+    &--projects,
+    &--revenue,
+    &--awards {
+      border-right: 1px solid #e6eaf0;
 
-    &:last-child {
-      border: none;
+      &:last-child {
+        border: none;
+      }
     }
-  }
 
-  &__item::before {
-    position: absolute;
-    content: '';
-  }
+    &::before {
+      position: absolute;
+      content: '';
+    }
 
-  &__item--projects::before {
-    background-image: url('../images/icons/about-icon1.svg');
-    width: 36px;
-    height: 37px;
-    left: -58px;
-    top: 19px;
-  }
+    &--projects::before {
+      background-image: url('../images/icons/about-icon1.svg');
+      width: 36px;
+      height: 37px;
+      left: -58px;
+      top: 19px;
+    }
 
-  &__item--revenue::before {
-    background-image: url('../images/icons/about-icon2.svg');
-    width: 43px;
-    height: 39px;
-    left: -66px;
-    top: 18px;
-  }
+    &--revenue::before {
+      background-image: url('../images/icons/about-icon2.svg');
+      width: 43px;
+      height: 39px;
+      left: -66px;
+      top: 18px;
+    }
 
-  &__item--awards::before {
-    background-image: url('../images/icons/about-icon3.svg');
-    width: 41px;
-    height: 40px;
-    left: -61px;
+    &--awards::before {
+      background-image: url('../images/icons/about-icon3.svg');
+      width: 41px;
+      height: 40px;
+      left: -61px;
+    }
   }
 
   &__item-title {
@@ -146,30 +146,30 @@
       top: -65px;
       transform: translateY(-50%);
     }
-  }
 
-  &__item--rate::before {
-    background-image: url('../../images/icons/about-center1.svg');
-    height: 57px;
-    width: 64px;
-  }
+    &--rate::before {
+      background-image: url('../images/icons/about-center1.svg');
+      height: 57px;
+      width: 64px;
+    }
 
-  &__item--delivered::before {
-    background-image: url('../../images/icons/about-center2.svg');
-    width: 64px;
-    height: 64px;
-  }
+    &--delivered::before {
+      background-image: url('../images/icons/about-center2.svg');
+      width: 64px;
+      height: 64px;
+    }
 
-  &__item--time::before {
-    background-image: url('../../images/icons/about-center3.svg');
-    width: 67px;
-    height: 64px;
-  }
+    &--time::before {
+      background-image: url('../images/icons/about-center3.svg');
+      width: 67px;
+      height: 64px;
+    }
 
-  &__item--store::before {
-    background-image: url('../../images/icons/about-center4.svg');
-    width: 48px;
-    height: 64px;
+    &--store::before {
+      background-image: url('../images/icons/about-center4.svg');
+      width: 48px;
+      height: 64px;
+    }
   }
 
   &__num {

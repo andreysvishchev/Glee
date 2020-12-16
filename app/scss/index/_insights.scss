@@ -67,11 +67,6 @@
     font-size: 12px;
     color: #222933;
     @extend %Rubik-400;
-
-    span {
-      font-family: MyriadPro-Regular;
-      padding-right: 5px;
-    }
   }
 
   &__info-data {
