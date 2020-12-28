@@ -12,7 +12,7 @@ body {
   flex-direction: column;
 }
 
-a{
+a {
   @extend %Rubik-400;
   color: $default;
 }
@@ -21,24 +21,140 @@ a{
   flex-grow: 1;
 }
 
-.wrapper {
-    max-width: 1790px;
-    padding: 0 10px;
-    margin: 0 auto;
-}
-
 .container {
   max-width: 1190px;
   padding: 0 10px;
   margin: 0 auto;
 }
 
+.container--big {
+  max-width: 1790px;
+}
+
 .title {
   @extend %DMSans-700;
   font-size: 36px;
-  color: $accent;
-  text-align: center;
 }
 
+.icon {
+  @extend %icon;
+  padding-right: 5px;
+}
 
+.address {
+  font-style: normal;
 
+  a {
+    display: block;
+  }
+
+  &__link {
+    margin-bottom: 10px;
+  }
+
+  &__phone {
+    margin-bottom: 5px;
+  }
+}
+
+.link-blue,
+.link-light {
+  font-size: 15px;
+  position: relative;
+  padding: 23px 100px 20px 30px;
+
+  &::after {
+    position: absolute;
+    right: 19px;
+  }
+}
+
+.link-blue {
+  background-color: #a3bbc8;
+  color: #fff;
+
+  &::after {
+    content: url('../images/icons/arrow.svg');
+  }
+}
+
+.link-light {
+  background-color: #fff;
+  color: #a3bbc8;
+  border: 1px solid #a3bbc8;
+
+  &::after {
+    content: url('../images/icons/arrow-blue.svg');
+  }
+}
+
+.top {
+  padding: 34px 0 29px;
+  background-color: #edf1f4;
+  text-align: center;
+  margin-bottom: 115px;
+
+  &__title {
+    color: #222933;
+    @extend %Rubik-300;
+    font-size: 36px;
+  }
+}
+
+.breadcrumbs {
+  display: inline-flex;
+  justify-content: center;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    padding-top: 10px;
+    @extend %Rubik-400;
+    font-size: 14px;
+    margin-left: 5px;
+
+    &::after {
+      content: '/';
+      padding-left: 5px;
+    }
+
+    &:last-child {
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &__link {
+    color: #888c91;
+
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    border: 1px solid #a3bbc8;
+    margin-right: 15px;
+  }
+
+  &__link {
+    color: #243f4d;
+    padding: 10px 19px;
+    display: block;
+
+  }
+
+  &__link--active {
+    background-color: #a3bbc8;
+    color: #fff;
+  }
+}

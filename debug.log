@@ -2,3 +2,5 @@
 [1119/191724.507:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
 [1121/151648.034:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
 [1121/152711.946:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
+[1123/132644.098:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
+[1123/135050.923:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\svish\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\f6214c7b-3837-4bbc-acd0-9173001ab469: Системе не удается найти указанный путь. (0x3)
